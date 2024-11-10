@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogadorFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="100dp">
+
+    <Button
+        android:id="@+id/btnExcluirJ"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/deletar"
+        app:layout_constraintStart_toStartOf="@+id/btnInserirJ"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirJ" />
+
+    <Button
+        android:id="@+id/btnListarJ"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/todos"
+        app:layout_constraintStart_toStartOf="@+id/btnModificarJ"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarJ" />
+
+    <EditText
+        android:id="@+id/etIdJ"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleJ" />
+
+    <EditText
+        android:id="@+id/etNascimentoJ"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/data_de_nascimento"
+        android:importantForAutofill="no"
+        android:inputType="datetime|date"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etPesoJ"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarJ" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etAlturaJ"
+        app:layout_constraintTop_toBottomOf="@+id/etIdJ" />
+
+    <EditText
+        android:id="@+id/etAlturaJ"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="@string/altura"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/spTimeJ"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etPesoJ"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/peso"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/spTimeJ"
+        app:layout_constraintTop_toBottomOf="@+id/etNascimentoJ" />
+
+    <TextView
+        android:id="@+id/tvTitleJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/jogador"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInserirJ"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/salvar"
+        app:layout_constraintStart_toStartOf="@+id/spTimeJ"
+        app:layout_constraintTop_toBottomOf="@+id/spTimeJ" />
+
+    <Button
+        android:id="@+id/btnBuscarJ"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="@+id/etNascimentoJ"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleJ" />
+
+    <Button
+        android:id="@+id/btnModificarJ"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/atualizar"
+        app:layout_constraintEnd_toEndOf="@+id/spTimeJ"
+        app:layout_constraintTop_toBottomOf="@+id/spTimeJ" />
+
+    <TextView
+        android:id="@+id/tvResultJ"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirJ" />
+
+    <Spinner
+        android:id="@+id/spTimeJ"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAlturaJ" />
+</androidx.constraintlayout.widget.ConstraintLayout>

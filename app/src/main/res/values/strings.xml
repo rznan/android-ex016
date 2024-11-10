@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Gerenciador de times</string>
+    <string name="author_data">Renan Santos Carvalho 1110482313034</string>
+
+    <!-- Generic Actions -->
+    <string name="salvar">Salvar</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="deletar">Deletar</string>
+    <string name="buscar">Buscar</string>
+    <string name="todos">Todos</string>
+
+    <!-- Team Attributes -->
+    <string name="codigo">Código</string>
+    <string name="time">Time</string>
+    <string name="nome_do_time">Nome do Time</string>
+    <string name="cidade">Cidade</string>
+
+    <!-- Player Attributes -->
+    <string name="jogador">Jogador</string>
+    <string name="id">ID</string>
+    <string name="nome">Nome</string>
+    <string name="data_de_nascimento">Nascimento</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="algo_deu_errado">Algo deu errado...</string>
+
+</resources>

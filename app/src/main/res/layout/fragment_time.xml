@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeFragment">
+
+    <Button
+        android:id="@+id/btnBuscarT"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeT"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etCodigoT"
+        app:layout_constraintTop_toTopOf="@+id/etCodigoT" />
+
+    <Button
+        android:id="@+id/btnExcluirT"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/deletar"
+        app:layout_constraintStart_toStartOf="@+id/btnInserirT"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirT" />
+
+    <Button
+        android:id="@+id/btnListarT"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/todos"
+        app:layout_constraintEnd_toEndOf="@+id/btnModificarT"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarT" />
+
+    <EditText
+        android:id="@+id/etCodigoT"
+        android:layout_width="167dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="@+id/etNomeT"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleT" />
+
+    <EditText
+        android:id="@+id/etCidadeT"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/cidade"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="@+id/etNomeT"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeT" />
+
+    <EditText
+        android:id="@+id/etNomeT"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/nome_do_time"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoT" />
+
+    <TextView
+        android:id="@+id/tvTitleT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/time"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInserirT"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/salvar"
+        app:layout_constraintStart_toStartOf="@+id/etCidadeT"
+        app:layout_constraintTop_toBottomOf="@+id/etCidadeT" />
+
+    <Button
+        android:id="@+id/btnModificarT"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/atualizar"
+        app:layout_constraintEnd_toEndOf="@+id/etCidadeT"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnInserirT"
+        app:layout_constraintTop_toBottomOf="@+id/etCidadeT" />
+
+    <TextView
+        android:id="@+id/tvResultT"
+        android:layout_width="320dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirT" />
+</androidx.constraintlayout.widget.ConstraintLayout>
