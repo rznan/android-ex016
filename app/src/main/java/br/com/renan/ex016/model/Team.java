@@ -2,6 +2,9 @@ package br.com.renan.ex016.model;
 
 import androidx.annotation.NonNull;
 
+/**
+ * @author: renan santos carvalho
+ */
 public class Team {
     private int code;
     private String name;

@@ -13,6 +13,9 @@ import java.util.List;
 
 import br.com.renan.ex016.controller.ICRUDDao;
 
+/**
+ * @author: renan santos carvalho
+ */
 public abstract class BaseCRUDFragment<T> extends Fragment {
 
     protected View view;

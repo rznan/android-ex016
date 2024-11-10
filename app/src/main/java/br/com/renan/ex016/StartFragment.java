@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+/**
+ * @author: renan santos carvalho
+ */
 public class StartFragment extends Fragment {
 
     private View VIEW;

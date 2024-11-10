@@ -12,6 +12,9 @@ import br.com.renan.ex016.controller.ICRUDDao;
 import br.com.renan.ex016.controller.SafeParser;
 import br.com.renan.ex016.model.Player;
 
+/**
+ * @author: renan santos carvalho
+ */
 public class JogadorFragment extends BaseCRUDFragment<Player> {
 
     private Button btnBuscarJ;

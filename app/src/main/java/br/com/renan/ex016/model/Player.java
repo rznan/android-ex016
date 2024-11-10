@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 
 import java.time.LocalDate;
 
+/**
+ * @author: renan santos carvalho
+ */
 public class Player {
 
     private int id;
